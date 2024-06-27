@@ -1,6 +1,6 @@
 deployAs:
   - name: merchant-center-honda-custom-application
-    applicationType: merchant-center-honda-custom-application
+    applicationType: merchant-center-custom-application
     configuration:
       standardConfiguration:
         - key: CUSTOM_APPLICATION_ID
