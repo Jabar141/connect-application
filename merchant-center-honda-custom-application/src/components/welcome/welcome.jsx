@@ -32,7 +32,7 @@ const Welcome = () => {
     return (
       <div key={category.id}>
         <h1>{category.key}</h1>
-        <p>{category.name}</p>
+        <p>{category.orderHint}</p>
       </div>
     );
   });
