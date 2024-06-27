@@ -1,5 +1,5 @@
 query FetchProductByKey {
-  products(where: "productType(id=\"69e0eedc-8af1-4dd3-8406-0a586d50e8d6\")") {
+  products(where: "productType(id=\"5bd000bd-e416-4d45-a06e-4c675ee3410f\")") {
     results {
       id
       key
