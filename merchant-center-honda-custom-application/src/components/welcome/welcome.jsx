@@ -4,14 +4,13 @@ import {
 } from '@commercetools-uikit/hooks';
 import { ContentNotification } from '@commercetools-uikit/notifications';
 import Text from '@commercetools-uikit/text';
-
-import { useProductFetcher } from '../../hooks/use-product-connector';
 import { getErrorMessage } from '../../helpers';
+import { useCategoryFetcher } from '../../hooks/use-category-connector';
 
 const Welcome = () => {
   const { page, perPage } = usePaginationState();
   const tableSorting = useDataTableSortingState({ key: 'key', order: 'asc' });
-  const { productsResult, error, loading } = useProductFetcher({
+  const { productsResult, error, loading } = useCategoryFetcher({
     page,
     perPage,
     tableSorting,
@@ -29,11 +28,11 @@ const Welcome = () => {
     return <>Loading...</>;
   }
 
-  return productsResult.products.results.map((product) => {
+  return productsResult.categories.results.map((category) => {
     return (
-      <div key={product.id}>
-        <h1>{product.key}</h1>
-        <p>{product.id}</p>
+      <div key={category.id}>
+        <h1>{category.key}</h1>
+        <p>{category.name}</p>
       </div>
     );
   });
