@@ -1,0 +1,22 @@
+query categories {
+  categories{
+    results{
+      id
+      nameAllLocales{
+        value
+        locale
+      }
+      parent{
+        parentRef{
+          id
+        }
+      }
+      custom{
+        customFieldsRaw{
+          name
+          value
+        }
+      }
+    }
+  }
+}
