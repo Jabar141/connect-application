@@ -12,7 +12,7 @@ const config = {
       initialProjectKey: 'honda',
     },
     production: {
-      applicationId: 'clxvehcqz001811rzbnir3gq7',
+      applicationId: 'clyst405w000w8c3wwy55t7fx',
       url: '${env:APPLICATION_URL}',
     },
   },
