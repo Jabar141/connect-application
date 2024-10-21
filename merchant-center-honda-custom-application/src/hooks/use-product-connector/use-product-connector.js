@@ -5,7 +5,7 @@ import FetchProductsQuery from './fetch-product.ctp.graphql';
 export const useProductFetcher = ({ page, perPage, tableSorting }) => {
   const { data, error, loading } = useMcQuery(FetchProductsQuery, {
     variables: {
-      key: 'lxb',
+      key: 'sweet-pea-candle',
     },
     context: {
       target: GRAPHQL_TARGETS.COMMERCETOOLS_PLATFORM,
