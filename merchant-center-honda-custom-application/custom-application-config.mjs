@@ -7,6 +7,16 @@ const config = {
   name: 'connect-poc',
   entryPointUriPath,
   cloudIdentifier: 'gcp-us',
+  mcApiUrl: "https://mc.europe-west1.gcp.commercetools.com/ct-training-oct21",
+    headers: {
+    csp: {
+      "connect-src": [
+        "https://api.europe-west1.gcp.commercetools.com",
+        "https://auth.europe-west1.gcp.commercetools.com",
+        "https://mc-api.europe-west1.gcp.commercetools.com/graphql"
+      ]
+    }
+  },
   env: {
     development: {
       initialProjectKey: 'honda',
